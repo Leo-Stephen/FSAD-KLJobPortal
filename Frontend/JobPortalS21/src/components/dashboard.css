@@ -1,0 +1,129 @@
+.dashboard {
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 250px auto;
+    gap: 1px;
+}
+
+.dashboard .header {
+    background: wheat;
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.dashboard .menu {
+    background: rgb(60, 69, 74);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 50px);
+}
+
+.dashboard .outlet {
+    background: #f0f2f5;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Header styles */
+.header .logo {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header .user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .logout {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.header .logout:hover {
+    transform: scale(1.1);
+}
+
+.header label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* MenuBar styles */
+.menubar {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.menuheader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid rgba(155, 133, 178, 0.2);
+}
+
+.menuheader img {
+    width: 25px;
+    height: 20px;
+}
+
+.menulist {
+    padding: 10px 0;
+}
+
+.menulist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menulist li {
+    display: flex;
+    align-items: center;
+    gap: 12px;  /* Space between icon and text */
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menulist li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menulist img {
+    width: 30px;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 200px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        grid-template-columns: 160px auto;
+    }
+    
+    .header label {
+        font-size: 0.9rem;
+    }
+}
