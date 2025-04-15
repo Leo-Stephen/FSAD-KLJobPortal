@@ -195,3 +195,23 @@ Contributions to the KL Job Portal project are welcome! Here's how you can contr
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Copyright © 2025 Leo Stephen - K L University
+
+## Acknowledgements
+
+### Academic Support
+
+- **K L University** - For providing the academic environment and resources for this project
+- **Department of Computer Science and Engineering** - For curriculum guidance and technical support
+- **Dr. Deepak** - Year Coordinator and Faculty for this subject, for his valuable guidance and mentorship
+
+### Technical Resources
+
+- **Spring Boot Community** - For comprehensive documentation and support forums
+- **React Community** - For extensive resources and component libraries
+- **MySQL Community** - For database management system and documentation
+- **GitHub** - For version control and project hosting
+
+### Special Thanks
+
+- To all classmates and peers who provided testing, feedback, and suggestions
+- To open-source contributors whose libraries and frameworks made this project possible
